@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHandling</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f4f7fb;
+    }
+
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px #0001;
+    }
+
+    h1 {
+      color: green;
+      background-color: rgb(255, 255, 144);
+      padding: 12px;
+      border-radius: 6px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 14px;
+      margin: 6px 4px 6px 0;
+      border: none;
+      border-radius: 6px;
+      background: #08192f;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #status {
+      color: #15803d;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Welcome to 3D World</h1>
+
+    <label for="description">Enter your text:</label>
+    <textarea id="description" maxlength="200" placeholder="Start typing here..."></textarea>
+
+    <p>Live preview: <span id="preview">Your text appears here...</span></p>
+
+    <p>
+      Characters: <span id="count">0</span>
+    </p>
+
+    <p id="status">Ready to start!</p>
+
+    <button id="changeBtn">Change Heading</button>
+    <button id="colorBtn">Change Background</button>
+    <button id="mybutton">Show Click Event</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <script src="App79.js"></script>
+</body>
+
+</html>
